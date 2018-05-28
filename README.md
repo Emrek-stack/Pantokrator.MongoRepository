@@ -10,7 +10,7 @@
 | Build server| Platform       | Status      |
 |-------------|----------------|-------------|
 | AppVeyor    | Windows        |[![Build status](https://ci.appveyor.com/api/projects/status/3ad4rq5bbqclws59?svg=true)](https://ci.appveyor.com/project/EmreKarahan/pantokrator-mongorepository) |
-|Travis       | Linux / MacOS  ||
+|Travis       | Linux / MacOS  |[![Build Status](https://travis-ci.org/EmreKarahan/Pantokrator.MongoRepository.svg?branch=master)](https://travis-ci.org/EmreKarahan/Pantokrator.MongoRepository) |
 
 
 ### IOC Registration
