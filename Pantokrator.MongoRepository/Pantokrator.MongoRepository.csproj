@@ -9,6 +9,8 @@
     <Copyright>Emre Karahan</Copyright>
     <PackageLicenseUrl>http://www.emrekarahan.net</PackageLicenseUrl>
     <PackageTags>mongodb donetcore netcore mongo nosql c#</PackageTags>
+    <PackageProjectUrl>https://github.com/EmreKarahan/Pantokrator.MongoRepository</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/EmreKarahan/Pantokrator.MongoRepository</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
