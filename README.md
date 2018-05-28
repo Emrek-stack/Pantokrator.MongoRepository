@@ -14,12 +14,15 @@ services.AddScoped<IUnitOfWork>(provider =>
 
 Our entities derives from BaseEntity.
 
-```cs
-    // Entity 
+If you want to use MongoDriver Bson Attributes.
+
+```cs    
     [CollectionName("items")]
     public class Item : BaseEntity
-    {
+    {    
+        [BsonElement("firstname")]
         public string Firstname { get; set; }
+        [BsonElement("lastname")]
         public string Lastname { get; set; }
     }
 ```
@@ -30,8 +33,7 @@ Our entities derives from BaseEntity.
 ### Repository Interface
 
 Repositroy interfaces implementes IRepository with Entity.    
-```cs    
-    // Interface Implementation
+```cs        
     public interface IItemRepository : IRepository<Item>
     {
     
@@ -42,8 +44,7 @@ Repositroy interfaces implementes IRepository with Entity.
 
 Repository clases derives BaseRepository and Entity and implemenets Repository Interface
     
-```cs    
-   // Class Implementation
+```cs       
     public class ItemRepository : BaseRepository<Item>, IItemRepository
     {
         public ItemRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
