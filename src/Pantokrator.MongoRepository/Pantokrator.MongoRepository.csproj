@@ -4,13 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Emre Karahan</Authors>
     <Company>Emre Karahan</Company>
-    <Product>Pantokrator Mongo Repository</Product>
-    <Description>Mongo Repository</Description>
+    <Product>Pantokrator MongoDB Repository</Product>
+    <Description>MongoDB Repository</Description>
     <Copyright>Emre Karahan</Copyright>
     <PackageLicenseUrl>http://www.emrekarahan.net</PackageLicenseUrl>
     <PackageTags>mongodb donetcore netcore mongo nosql c#</PackageTags>
     <PackageProjectUrl>https://github.com/EmreKarahan/Pantokrator.MongoRepository</PackageProjectUrl>
     <RepositoryUrl>https://github.com/EmreKarahan/Pantokrator.MongoRepository</RepositoryUrl>
+    <Version>1.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
