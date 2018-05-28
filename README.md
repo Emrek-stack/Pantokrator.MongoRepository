@@ -17,18 +17,22 @@ Entity :
     Custom Repo : 
     
     Interface Implementation
+```cs    
     public interface IItemRepository : IRepository<Item>
     {
     
     }
-    
+```    
     Class Implementation
+
+```cs    
     public class ItemRepository : BaseRepository<Item>, IItemRepository
     {
         public ItemRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
     }
+```    
     
     
     
