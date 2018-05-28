@@ -1,7 +1,7 @@
 # How to use Pantokrator Mongo Repository
 
 ### IOC Registration
-Firstly we have to register our UnitOfWork and Repositories with connectionstrig.
+Firstly we have to register our UnitOfWork and Repositories with Connection String.
 
 ```cs
 services.AddScoped<IUnitOfWork>(provider =>
