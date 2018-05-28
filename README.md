@@ -1,5 +1,4 @@
 # How to use Pantokrator Mongo Repository
-
 ## Quickly Implementable MongoDB .Net Core Repositpory
 
 ### IOC Registration
