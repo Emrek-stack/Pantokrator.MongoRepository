@@ -6,6 +6,13 @@
 [Install with Nuget](https://www.nuget.org/packages/Pantokrator.MongoRepository)
 
 
+## Build Status
+| Build server| Platform       | Status      |
+|-------------|----------------|-------------|
+| AppVeyor    | Windows        |[![Build status](https://ci.appveyor.com/api/projects/status/3ad4rq5bbqclws59?svg=true)](https://ci.appveyor.com/project/EmreKarahan/pantokrator-mongorepository) |
+|Travis       | Linux / MacOS  ||
+
+
 ### IOC Registration
 Firstly we have to register our UnitOfWork and Repositories with Connection String.
 
