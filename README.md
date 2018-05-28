@@ -24,6 +24,8 @@ If you want to use MongoDriver Bson Attributes.
         public string Firstname { get; set; }
         [BsonElement("lastname")]
         public string Lastname { get; set; }
+        [BsonElement("createDate")]
+        public DateTime CreateDate { get; set; }
     }
 ```
     
@@ -53,6 +55,30 @@ Repository clases derives BaseRepository and Entity and implemenets Repository I
     }
 ```    
     
-    
-    
-    
+
+### Sample Query
+
+```cs       
+ public class HomeController : Controller
+    {
+        private readonly IItemRepository _itemRepository;
+                
+        public HomeController(IItemRepository itemRepository)
+        {
+            _itemRepository = itemRepository;                        
+        }
+        
+        [Route("items")]
+        public IActionResult Index(string firstName, string lastName)
+        {            
+            var data = _itemRepository.AsQueryable();
+          
+            data = data.Where(c => c.Firstname == firstName);
+            data = data.Where(s => s.Lastname == lastName);
+
+            data = data.OrderByDescending(b => b.CreateDate);
+            var result = data.ToList();            
+            return View(result);
+        }        
+    }    
+```        
