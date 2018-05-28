@@ -24,10 +24,12 @@ Our entities derives from BaseEntity.
     }
 ```
     
-    
-    Custom Repo : 
-    
-    
+        
+## Repository Implementation
+
+### Repository Interface
+
+Repositroy interfaces implementes IRepository with Entity.    
 ```cs    
     // Interface Implementation
     public interface IItemRepository : IRepository<Item>
@@ -35,6 +37,10 @@ Our entities derives from BaseEntity.
     
     }
 ```    
+    
+### Repository Class
+
+Repository clases derives BaseRepository and Entity and implemenets Repository Interface
     
 ```cs    
    // Class Implementation
