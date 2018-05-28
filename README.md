@@ -58,6 +58,8 @@ Repository clases derives BaseRepository and Entity and implemenets Repository I
 
 ### Sample Query
 
+Sample Mongo Query shown below.
+
 ```cs       
  public class HomeController : Controller
     {
@@ -73,8 +75,11 @@ Repository clases derives BaseRepository and Entity and implemenets Repository I
         {            
             var data = _itemRepository.AsQueryable();
           
-            data = data.Where(c => c.Firstname == firstName);
-            data = data.Where(s => s.Lastname == lastName);
+            if(!string.IsNullOrEmpty(firstName))
+                data = data.Where(c => c.Firstname == firstName);
+
+            if(!string.IsNullOrEmpty(lastName))
+                data = data.Where(s => s.Lastname == lastName);
 
             data = data.OrderByDescending(b => b.CreateDate);
             var result = data.ToList();            
