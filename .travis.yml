@@ -1,0 +1,23 @@
+language: csharp
+solution: Pantokrator.MongoRepository.sln
+sudo: required
+dist: trusty
+dotnet: 2.1.300
+mono: none
+os:
+  - linux
+
+branches:  
+  only:
+    - master
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
+before_script:
+  - dotnet restore
+
+script:
+  - dotnet build ./Pantokrator.MongoRepository.sln  
