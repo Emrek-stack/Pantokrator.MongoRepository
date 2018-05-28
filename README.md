@@ -14,7 +14,7 @@ services.AddScoped<IUnitOfWork>(provider =>
 
 Our entities derives from BaseEntity.
 
-If you want to use MongoDriver Bson Attributes.
+If you want to use MongoDB Driver BsonElement Attributes.
 
 ```cs    
     [CollectionName("items")]
