@@ -1,5 +1,7 @@
 # How to use Pantokrator Mongo Repository
 
+## Quickly Implementable MongoDB .Net Core Repositpory
+
 ### IOC Registration
 Firstly we have to register our UnitOfWork and Repositories with Connection String.
 
