@@ -2,6 +2,15 @@
 
 Usage:
 
+
+IOC Registration
+
+```cs
+services.AddScoped<IUnitOfWork>(provider =>
+    new UnitOfWork(Configuration.GetConnectionString("DefaultConnection")))
+    .AddScoped<IItemRepository, ItemRepository>();
+```
+
 Entity :
 
 ```cs
