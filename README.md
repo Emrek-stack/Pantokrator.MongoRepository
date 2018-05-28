@@ -1,6 +1,11 @@
 # How to use Pantokrator Mongo Repository
 ## Quickly Implementable MongoDB .Net Core Repositpory
 
+
+### Pantokrator Repository avaliable on NuGet.
+[Install with Nuget](https://www.nuget.org/packages/Pantokrator.MongoRepository)
+
+
 ### IOC Registration
 Firstly we have to register our UnitOfWork and Repositories with Connection String.
 
