@@ -1,9 +1,7 @@
-# Pantokrator.MongoRepository
+# How to use Pantokrator Mongo Repository
 
-Usage:
-
-
-IOC Registration
+### IOC Registration
+Firstly we have to register our UnitOfWork and Repositories with connectionstrig.
 
 ```cs
 services.AddScoped<IUnitOfWork>(provider =>
@@ -11,7 +9,10 @@ services.AddScoped<IUnitOfWork>(provider =>
     .AddScoped<IItemRepository, ItemRepository>();
 ```
 
-Entity :
+
+### Entity Creation
+
+Our entities derives from BaseEntity.
 
 ```cs
     // Entity 
