@@ -27,9 +27,7 @@ namespace Pantokrator.MongoRepository.Repository
         {
             return Collection.AsQueryable();
         }
-
       
-
         public virtual void Add(IEnumerable<T> entities)
         {
             Collection.InsertMany(entities);
